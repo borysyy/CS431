@@ -52,6 +52,8 @@ int main(void)
     // Remainder
     R = N;
 
+    cout << "N = " << N << "\n";
+    cout << "D = " << D << "\n";
     cout << "Quotient = " << Q << "\n";
     cout << "Remainder = " << R << "\n";
 
