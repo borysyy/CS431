@@ -3,6 +3,7 @@ Assignment: GHP#1
 Written by: Slava Borysyuk
 Date: 09/12/2023
 Language: C++
+Compiler: g++
 Description: Integer division using two positive
 integers (N and R), and finding a non negative
 quotient (Q) and remainder (R). However, the variables
@@ -28,7 +29,7 @@ int main(void)
     cin >> N;
 
     // If user doesn't enter a positive integer
-    while (N < 0)
+    while (N <= 0)
     {
         cout << "You must enter a positive integer: ";
         cin >> N;
@@ -38,7 +39,7 @@ int main(void)
     cin >> D;
 
     // If user doesn't enter a second positive integer
-    while (D < 0)
+    while (D <= 0)
     {
         cout << "You must enter a second positive integer: ";
         cin >> D;
