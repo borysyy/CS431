@@ -1,6 +1,8 @@
 /*
 Assignment: GHP#1
 Written by: Slava Borysyuk
+Date: 09/12/2023
+Language: C++
 Description: Integer division using two positive
 integers (N and R), and finding a non negative
 quotient (Q) and remainder (R). However, the variables
