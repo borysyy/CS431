@@ -22,6 +22,7 @@ int R = 0;
 
 using namespace std;
 
+//Integer Divison Prototype
 void INTDIV();
 
 int main(void)
@@ -47,7 +48,7 @@ int main(void)
         cin >> D;
     }
 
-    // Integer Divison call
+    // Integer Divison Call
     INTDIV();
 
     cout << "N = " << N << "\n";
