@@ -22,6 +22,30 @@ int R = 0;
 
 using namespace std;
 
+/*
+INTDIV function
+Written by: Slava Borysyuk
+Date: 09/19/2023
+Language: C++
+Compiler: g++
+Description: Integer division where it takes in both
+the user inputs. Then Checks if the first number is greater
+than the second. If so then it goes into the while loop and
+the first number gets subtracted by the second until the loop
+fails. Then the remainder is what the first number is at the end.
+*/
+void INTDIV(int N, int D)
+{
+    while (N >= D)
+    {
+        N = N - D;
+        Q = Q + 1;
+    }
+
+    // Remainder
+    R = N;
+}
+
 int main(void)
 {
 
@@ -45,15 +69,7 @@ int main(void)
         cin >> D;
     }
 
-    // Integer Divison
-    while (N >= D)
-    {
-        N = N - D;
-        Q = Q + 1;
-    }
-
-    // Remainder
-    R = N;
+    INTDIV(N, D);
 
     cout << "N = " << N << "\n";
     cout << "D = " << D << "\n";
