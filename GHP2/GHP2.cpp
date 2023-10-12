@@ -9,12 +9,87 @@ Description:
 
 #include <iostream>
 
-int n = 0;
-int a[0]
+using namespace std;
 
-    int
-    main(void)
+int n;
+int a[100];
+
+void sort();
+void move();
+void Findkay();
+
+int main(void)
 {
+    cout << "Enter an array size: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
+    {
+        cout << "Input a number into the array: ";
+        cin >> a[i];
+    }
+
+    sort();
+
+    cout << "\n";
+    cout << "Sorted Array: " << endl;
+    for (int i = 1; i <= n; i++)
+    {
+        cout << a[i];
+        cout << "\n";
+    }
 
     return 0;
+}
+
+int j;
+
+void sort()
+{
+    for (j = 1; j <= n - 1; j++)
+    {
+        if (a[j] > a[j + 1])
+        {
+            move();
+        }
+    }
+
+    return;
+}
+
+int k;
+int temp;
+
+void move()
+{
+    temp = a[j + 1];
+    a[j + 1] = a[j];
+
+    Findkay();
+
+    a[k] = temp;
+
+    return;
+}
+
+void Findkay()
+{
+
+    k = j;
+    int sw = 0;
+
+    while ((k > 1) && (sw == 0))
+    {
+        if (a[k - 1] > temp)
+        {
+            a[k] = a[k - 1];
+            k = k - 1;
+        }
+        else
+        {
+            sw = 1;
+        }
+    }
+
+    return;
 }
