@@ -25,7 +25,6 @@ void Findkay();
 
 int main(void)
 {
-
     cout << "Enter an array size: ";
     cin >> n;
 
@@ -86,7 +85,6 @@ void move()
 
 void Findkay()
 {
-
     k = j;
     int sw = 0;
 
