@@ -5,7 +5,7 @@ Date: 10/12/2023
 Language C++
 Compiler: g++
 Description:
-This program is doing a sort of an array, however,
+This program is doing an (awful) sort of an array, however,
 the variables must be scoped so that they are global.
 For example, the int variable j shouldn't be available to main, but
 must be available to all the other functions. So we declare j underneath
@@ -28,7 +28,7 @@ int main(void)
     cout << "Enter an array size: ";
     cin >> n;
 
-    while(n <= 0)
+    while (n <= 0)
     {
         cout << "Array size must be greater than zero: ";
         cin >> n;
@@ -49,7 +49,7 @@ int main(void)
         cout << a[i];
         cout << "\n";
     }
-    
+
     return 0;
 }
 
