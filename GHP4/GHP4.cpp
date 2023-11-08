@@ -17,7 +17,7 @@ using namespace std;
 int main(void)
 {
 
-    list<string> d_list;
+    list<string> d_words;
     list<string> other_words;
 
     string filename;
@@ -31,34 +31,34 @@ int main(void)
     if (file.is_open())
     {
         string word;
-        bool contains_d = false;
 
         while (file >> word)
         {
-            for (char character : word)
+            if (word[0] != 'D' && word[0] != 'd')
             {
-                if (character == 'D' || character == 'd')
-                {
-                    d_list.push_back(word);
-                }
+                other_words.push_back(word);
             }
-
-            file.close();
-
-            cout << "Words with the letter d or D: "
-                 << "\n";
-            for (const string &word : d_list)
+            else
             {
-                cout << word << " ";
+                d_words.push_back(word);
             }
-            cout << "\n\n";
+        }
 
-            cout << "Every other word: "
-                 << "\n";
-            for (const string &other_words : other_words)
-            {
-                cout << other_words << " ";
-            }
+        file.close();
+
+        cout << "Words with the letter d or D: "
+             << "\n";
+        for (const string &word : d_words)
+        {
+            cout << word << " ";
+        }
+        cout << "\n\n";
+
+        cout << "Every other word: "
+             << "\n";
+        for (const string &other_words : other_words)
+        {
+            cout << other_words << " ";
         }
 
         return 0;
