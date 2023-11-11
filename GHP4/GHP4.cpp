@@ -20,7 +20,7 @@
 using namespace std;
 
 /*
-   Assignment: GHP#3
+   Assignment: GHP#4
    Written by: Slava Borysyuk
    Date: 11/10/2023
    Language C++
@@ -43,7 +43,7 @@ int main(void)
     // A list of type string for every other word
     list<string> other_words;
     // A map in which the type of key is a string, meaning the word,
-    // and the mapped value is an int, meaning the frequency in which it appears.
+    // and the mapped value is an int, meaning the frequency in which the word appears.
     map<string, int> word_frequency;
 
     string filename;
@@ -85,7 +85,7 @@ int main(void)
         other_words.sort();
 
         cout
-            << "Words with the letter d or D: "
+            << "Words with the letter 'D' or 'd': "
             << "\n";
         for (const string &word : d_words)
         {
@@ -97,9 +97,9 @@ int main(void)
 
         cout << "Every other word: "
              << "\n";
-        for (const string &other_word : other_words)
+        for (const string &word : other_words)
         {
-            cout << other_word << " (" << word_frequency[other_word] << ") ";
+            cout << word << " (" << word_frequency[word] << ") ";
             cout << "\n";
         }
 
