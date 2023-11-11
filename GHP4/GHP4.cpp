@@ -84,9 +84,8 @@ int main(void)
         d_words.sort();
         other_words.sort();
 
-        cout
-            << "Words with the letter 'D' or 'd': "
-            << "\n";
+        cout << "Words with the letter 'D' or 'd': "
+             << "\n";
         for (const string &word : d_words)
         {
             cout << word << " (" << word_frequency[word] << ") ";
