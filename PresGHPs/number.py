@@ -28,6 +28,7 @@ found = False
 
 for i in range(len(list_of_ints)):
     if found:
+        # Break statement because we're assuming only one pair. So once it finds one it breaks the loop.
         break
     for j in range(i + 1, len(list_of_ints)):
         if (list_of_ints[i] + list_of_ints[j]) == target_value:
