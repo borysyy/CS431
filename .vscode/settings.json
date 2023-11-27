@@ -1,7 +1,10 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
+<<<<<<< HEAD
         "istream": "cpp",
+=======
+>>>>>>> 8417f3fccb0d184f6a716d75b3c5cc7b85cce7d6
         "iostream": "cpp"
     }
 }
