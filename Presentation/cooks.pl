@@ -1,6 +1,6 @@
-can_cook(priya).
-can_cook(jaya).
-can_cook(tiyasha).
+can_cook(jane).
+can_cook(mary).
+can_cook(amy).
 
-likes(priya,jaya) :- can_cook(jaya).
-likes(priya,tiyasha) :- can_cook(tiyasha).
+likes(jane,mary) :- can_cook(mary).
+likes(jane,amy) :- can_cook(amy).

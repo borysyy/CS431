@@ -1,7 +1,9 @@
-sing_a_song(ananya).
-listens_to_music(rohit).
+% Facts
+sing_a_song(kayla).
+listens_to_music(bob).
 
-listens_to_music(ananya) :- sing_a_song(ananya).
-happy(ananya) :- sing_a_song(ananya).
-happy(rohit) :- listens_to_music(rohit).
-plays_guitar(rohit) :- listens_to_music(rohit).
+% Rules
+listens_to_music(kayla) :- sing_a_song(kayla).
+happy(kayla) :- sing_a_song(kayla).
+happy(bob) :- listens_to_music(bob).
+plays_guitar(bob) :- listens_to_music(bob).
